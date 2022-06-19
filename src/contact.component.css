@@ -1,0 +1,27 @@
+*{
+    color: white;
+    font-size: 0.95em;
+}
+mat-expansion-panel{
+    background-color: var(--blue-2);
+    margin-bottom: 15px;
+}
+
+mat-panel-description{
+   position: absolute;
+   left: 60%;
+   color: aliceblue;
+}
+button{
+    position: absolute;
+    left: 70%;
+    background-color: var(--blue-2);
+    color: red;
+  
+}
+.search{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin:5px;
+}

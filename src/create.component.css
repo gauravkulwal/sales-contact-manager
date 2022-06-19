@@ -1,0 +1,35 @@
+.form-container  {
+    margin: 0 auto; 
+    width:200px;
+    
+}
+::ng-deep.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: white;
+}
+
+::ng-deep .mat-form-field-placeholder{
+
+    color: white;
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-placeholder{
+  
+    color: white;
+  }
+  input{
+    color: white;
+}
+mat-label{
+    color: white;
+    font-size: 0.8em;
+}
+.mat-raised-button {
+  height:30px !important;
+  width:100px !important;
+  font-size:16px !important;
+  
+  background-color: var(--blue-2);
+  color: white;
+  margin-left: 100px;
+  align-items: end;
+}
