@@ -1,0 +1,28 @@
+<form [formGroup]="contactService.form" (ngSubmit)="onSubmit()">
+    <div class="form-container">
+       <mat-form-field>
+        <mat-label>FullName</mat-label>
+       <input type="text" formControlName="name" matInput >
+       </mat-form-field> 
+       <mat-form-field>
+        <mat-label>FatherName</mat-label>
+        <input type="text" formControlName="fatherName" matInput placeholder="FatherName">
+        </mat-form-field> 
+        <mat-form-field>
+            <mat-label>City</mat-label>
+            <input type="text" formControlName="city" matInput placeholder="City">
+            </mat-form-field> 
+
+        <mat-form-field>
+            <mat-label>Mobile</mat-label>
+            <input type="text" formControlName="mobile" matInput placeholder="Mobile">
+           
+            <mat-error *ngIf="contactService.form.controls['mobile'].errors?.pattern"> Please enter a valid number! </mat-error>    
+        </mat-form-field> 
+            <mat-form-field >
+                <mat-label>Remarks</mat-label>
+                <textarea formControlName="remark" placeholder="Remarks" matInput></textarea>
+              </mat-form-field>
+              <button mat-raised-button>Submit</button>
+    </div>
+    <form>
